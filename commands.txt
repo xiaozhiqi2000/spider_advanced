@@ -1,0 +1,16 @@
+# 运行spider爬虫文件
+scrapy runspider stackoverflow_spider.py -o abc.csv
+
+# 新建一个scrapy项目
+scrapy startproject myfirstscrapy
+
+# 编写爬虫
+cd myfirstscrapy
+scrapy genspider dmoz_spider dmoz.org
+vi myfirstscrapy/spider/dmoz_spider
+
+# 运行爬虫
+scrapy crawl dmoz_spider
+
+
+
