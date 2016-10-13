@@ -10,7 +10,15 @@ scrapy genspider dmoz_spider dmoz.org
 vi myfirstscrapy/spider/dmoz_spider
 
 # 运行爬虫
-scrapy crawl dmoz_spider
+scrapy crawl dmoz_spider --nolog
+
+# 列出有多少爬虫
+scrapy list
 
 
 
+scrapy命令:
+scrapy --help
+scrapy version
+scrapy version -v
+scrapy view 
