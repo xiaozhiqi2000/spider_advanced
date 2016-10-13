@@ -1,0 +1,441 @@
+
+2016-10-12 11:52:42 [scrapy] INFO: Scrapy 1.1.1 started (bot: topgoods)
+2016-10-12 11:52:42 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'topgoods.spiders', 'FEED_URI': 'result.csv', 'SPIDER_MODULES': ['topgoods.spiders'], 'BOT_NAME': 'topgoods', 'FEED_FORMAT': 'csv', 'LOG_FILE': 'scrapy.log'}
+2016-10-12 11:52:42 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-10-12 11:52:42 [py.warnings] WARNING: /home/tomcat/myenv27/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2016-10-12 11:52:42 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-10-12 11:52:42 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-10-12 11:52:42 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-10-12 11:52:42 [scrapy] INFO: Spider opened
+2016-10-12 11:52:42 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-10-12 11:52:42 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6024
+2016-10-12 11:52:42 [scrapy] DEBUG: Redirecting (302) to <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest>
+2016-10-12 11:52:42 [scrapy] DEBUG: Redirecting (302) to <GET https://pass.tmall.com/add?_tb_token_=QNsvdGJidvxr&cookie2=7c5444837ed72ddfa05a5693c0ebb184&t=cb363b1a6d6aa5ec2085ebfa9200367e&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest&pacc=mDIC5LdiMgV9O38WO-eAPg==&opi=183.12.51.161&tmsc=1476244362437693> from <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest>
+2016-10-12 11:52:42 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest> from <GET https://pass.tmall.com/add?_tb_token_=QNsvdGJidvxr&cookie2=7c5444837ed72ddfa05a5693c0ebb184&t=cb363b1a6d6aa5ec2085ebfa9200367e&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest&pacc=mDIC5LdiMgV9O38WO-eAPg==&opi=183.12.51.161&tmsc=1476244362437693>
+2016-10-12 11:52:42 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest>
+2016-10-12 11:52:42 [scrapy] DEBUG: Redirecting (302) to <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsMzkyNmM3MTAwNDQwNGQ3YThlZDQyYWU5ZmIzYTdjZDY%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest&smSign=L6evWF%2FUCz19OE9ROgN23w%3D%3D> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest>
+2016-10-12 11:52:43 [scrapy] DEBUG: Redirecting (302) to <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMzkyNmM3MTAwNDQwNGQ3YThlZDQyYWU5ZmIzYTdjZDY%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DL6evWF%252FUCz19OE9ROgN23w%253D%253D> from <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsMzkyNmM3MTAwNDQwNGQ3YThlZDQyYWU5ZmIzYTdjZDY%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest&smSign=L6evWF%2FUCz19OE9ROgN23w%3D%3D>
+2016-10-12 11:52:43 [scrapy] DEBUG: Redirecting (302) to <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMzkyNmM3MTAwNDQwNGQ3YThlZDQyYWU5ZmIzYTdjZDY%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DL6evWF%252FUCz19OE9ROgN23w%253D%253D> from <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMzkyNmM3MTAwNDQwNGQ3YThlZDQyYWU5ZmIzYTdjZDY%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DL6evWF%252FUCz19OE9ROgN23w%253D%253D>
+2016-10-12 11:52:43 [scrapy] DEBUG: Crawled (200) <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMzkyNmM3MTAwNDQwNGQ3YThlZDQyYWU5ZmIzYTdjZDY%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DL6evWF%252FUCz19OE9ROgN23w%253D%253D> (referer: None)
+2016-10-12 11:52:43 [tm_goods] DEBUG: List Page error--https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMzkyNmM3MTAwNDQwNGQ3YThlZDQyYWU5ZmIzYTdjZDY%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DL6evWF%252FUCz19OE9ROgN23w%253D%253D
+2016-10-12 11:52:43 [scrapy] INFO: Closing spider (finished)
+2016-10-12 11:52:43 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4793,
+ 'downloader/request_count': 8,
+ 'downloader/request_method_count/GET': 8,
+ 'downloader/response_bytes': 11678,
+ 'downloader/response_count': 8,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 10, 12, 3, 52, 43, 444264),
+ 'log_count/DEBUG': 10,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 8,
+ 'scheduler/dequeued/memory': 8,
+ 'scheduler/enqueued': 8,
+ 'scheduler/enqueued/memory': 8,
+ 'start_time': datetime.datetime(2016, 10, 12, 3, 52, 42, 102590)}
+2016-10-12 11:52:43 [scrapy] INFO: Spider closed (finished)
+2016-10-12 11:56:25 [scrapy] INFO: Scrapy 1.1.1 started (bot: topgoods)
+2016-10-12 11:56:25 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'topgoods.spiders', 'FEED_URI': 'result.csv', 'SPIDER_MODULES': ['topgoods.spiders'], 'BOT_NAME': 'topgoods', 'FEED_FORMAT': 'csv', 'LOG_FILE': 'scrapy.log'}
+2016-10-12 11:56:25 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-10-12 11:56:25 [py.warnings] WARNING: /home/tomcat/myenv27/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2016-10-12 11:56:25 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-10-12 11:56:25 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-10-12 11:56:25 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-10-12 11:56:25 [scrapy] INFO: Spider opened
+2016-10-12 11:56:25 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-10-12 11:56:25 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6024
+2016-10-12 11:56:25 [scrapy] DEBUG: Redirecting (302) to <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest>
+2016-10-12 11:56:25 [scrapy] DEBUG: Redirecting (302) to <GET https://pass.tmall.com/add?_tb_token_=4LXF8AhfZPv2&cookie2=a7e29a1c5799a7a94f7709c6ffe98190&t=c0e5f3e4c5f20ae67a96080788bc5735&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest&pacc=JCzbMPFgEpaIBGgPvaKmfQ==&opi=183.12.51.161&tmsc=1476244585865277> from <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest>
+2016-10-12 11:56:26 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest> from <GET https://pass.tmall.com/add?_tb_token_=4LXF8AhfZPv2&cookie2=a7e29a1c5799a7a94f7709c6ffe98190&t=c0e5f3e4c5f20ae67a96080788bc5735&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest&pacc=JCzbMPFgEpaIBGgPvaKmfQ==&opi=183.12.51.161&tmsc=1476244585865277>
+2016-10-12 11:56:26 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest>
+2016-10-12 11:56:26 [scrapy] DEBUG: Redirecting (302) to <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsYmZhODYwNDk2NTc3NDRjN2ExODk5ZThkNTEyODJiNGY%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest&smSign=qNQyXD2mGD9wyR%2FDtRCjwA%3D%3D> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest>
+2016-10-12 11:56:26 [scrapy] DEBUG: Redirecting (302) to <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsYmZhODYwNDk2NTc3NDRjN2ExODk5ZThkNTEyODJiNGY%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DqNQyXD2mGD9wyR%252FDtRCjwA%253D%253D> from <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsYmZhODYwNDk2NTc3NDRjN2ExODk5ZThkNTEyODJiNGY%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest&smSign=qNQyXD2mGD9wyR%2FDtRCjwA%3D%3D>
+2016-10-12 11:56:26 [scrapy] DEBUG: Redirecting (302) to <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsYmZhODYwNDk2NTc3NDRjN2ExODk5ZThkNTEyODJiNGY%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DqNQyXD2mGD9wyR%252FDtRCjwA%253D%253D> from <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsYmZhODYwNDk2NTc3NDRjN2ExODk5ZThkNTEyODJiNGY%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DqNQyXD2mGD9wyR%252FDtRCjwA%253D%253D>
+2016-10-12 11:56:26 [scrapy] DEBUG: Crawled (200) <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsYmZhODYwNDk2NTc3NDRjN2ExODk5ZThkNTEyODJiNGY%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DqNQyXD2mGD9wyR%252FDtRCjwA%253D%253D> (referer: None)
+2016-10-12 11:56:26 [tm_goods] DEBUG: List Page error--https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsYmZhODYwNDk2NTc3NDRjN2ExODk5ZThkNTEyODJiNGY%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DqNQyXD2mGD9wyR%252FDtRCjwA%253D%253D
+2016-10-12 11:56:26 [scrapy] INFO: Closing spider (finished)
+2016-10-12 11:56:26 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4793,
+ 'downloader/request_count': 8,
+ 'downloader/request_method_count/GET': 8,
+ 'downloader/response_bytes': 11715,
+ 'downloader/response_count': 8,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 10, 12, 3, 56, 26, 625565),
+ 'log_count/DEBUG': 10,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 8,
+ 'scheduler/dequeued/memory': 8,
+ 'scheduler/enqueued': 8,
+ 'scheduler/enqueued/memory': 8,
+ 'start_time': datetime.datetime(2016, 10, 12, 3, 56, 25, 548811)}
+2016-10-12 11:56:26 [scrapy] INFO: Spider closed (finished)
+2016-10-12 11:58:38 [scrapy] INFO: Scrapy 1.1.1 started (bot: topgoods)
+2016-10-12 11:58:38 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'topgoods.spiders', 'FEED_URI': 'result.csv', 'SPIDER_MODULES': ['topgoods.spiders'], 'BOT_NAME': 'topgoods', 'FEED_FORMAT': 'csv', 'LOG_FILE': 'scrapy.log'}
+2016-10-12 11:58:38 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-10-12 11:58:38 [py.warnings] WARNING: /home/tomcat/myenv27/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2016-10-12 11:58:38 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-10-12 11:58:38 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-10-12 11:58:38 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-10-12 11:58:38 [scrapy] INFO: Spider opened
+2016-10-12 11:58:38 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-10-12 11:58:38 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6024
+2016-10-12 11:58:39 [scrapy] DEBUG: Redirecting (302) to <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest>
+2016-10-12 11:58:39 [scrapy] DEBUG: Redirecting (302) to <GET https://pass.tmall.com/add?_tb_token_=8MvSMb658IJV&cookie2=e4bf963552c5a06722eac10e9fb6c33d&t=6791e473eefc3725c31b2f478bbe822c&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest&pacc=wVVB5_NUiIBF-1qI_lwg-w==&opi=183.12.51.161&tmsc=1476244719124127> from <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest>
+2016-10-12 11:58:39 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest> from <GET https://pass.tmall.com/add?_tb_token_=8MvSMb658IJV&cookie2=e4bf963552c5a06722eac10e9fb6c33d&t=6791e473eefc3725c31b2f478bbe822c&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest&pacc=wVVB5_NUiIBF-1qI_lwg-w==&opi=183.12.51.161&tmsc=1476244719124127>
+2016-10-12 11:58:39 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest>
+2016-10-12 11:58:39 [scrapy] DEBUG: Redirecting (302) to <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsZjVhNDBlYzVkNWQ1NGQwZWE5YmVjNzdkZTEzZDQ5ODk%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest&smSign=mR2YMbl5mte5QuXqADyOPQ%3D%3D> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nvzhuang_1&from=mallfp..pc_1_suggest>
+2016-10-12 11:58:39 [scrapy] DEBUG: Redirecting (302) to <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsZjVhNDBlYzVkNWQ1NGQwZWE5YmVjNzdkZTEzZDQ5ODk%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DmR2YMbl5mte5QuXqADyOPQ%253D%253D> from <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsZjVhNDBlYzVkNWQ1NGQwZWE5YmVjNzdkZTEzZDQ5ODk%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnvzhuang_1%26from%3Dmallfp..pc_1_suggest&smSign=mR2YMbl5mte5QuXqADyOPQ%3D%3D>
+2016-10-12 11:58:39 [scrapy] DEBUG: Redirecting (302) to <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsZjVhNDBlYzVkNWQ1NGQwZWE5YmVjNzdkZTEzZDQ5ODk%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DmR2YMbl5mte5QuXqADyOPQ%253D%253D> from <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsZjVhNDBlYzVkNWQ1NGQwZWE5YmVjNzdkZTEzZDQ5ODk%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DmR2YMbl5mte5QuXqADyOPQ%253D%253D>
+2016-10-12 11:58:39 [scrapy] DEBUG: Crawled (200) <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsZjVhNDBlYzVkNWQ1NGQwZWE5YmVjNzdkZTEzZDQ5ODk%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DmR2YMbl5mte5QuXqADyOPQ%253D%253D> (referer: None)
+2016-10-12 11:58:40 [tm_goods] DEBUG: List Page error--https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsZjVhNDBlYzVkNWQ1NGQwZWE5YmVjNzdkZTEzZDQ5ODk%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnvzhuang_1%2526from%253Dmallfp..pc_1_suggest%26smSign%3DmR2YMbl5mte5QuXqADyOPQ%253D%253D
+2016-10-12 11:58:40 [scrapy] INFO: Closing spider (finished)
+2016-10-12 11:58:40 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4783,
+ 'downloader/request_count': 8,
+ 'downloader/request_method_count/GET': 8,
+ 'downloader/response_bytes': 11689,
+ 'downloader/response_count': 8,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 10, 12, 3, 58, 40, 27592),
+ 'log_count/DEBUG': 10,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 8,
+ 'scheduler/dequeued/memory': 8,
+ 'scheduler/enqueued': 8,
+ 'scheduler/enqueued/memory': 8,
+ 'start_time': datetime.datetime(2016, 10, 12, 3, 58, 38, 801453)}
+2016-10-12 11:58:40 [scrapy] INFO: Spider closed (finished)
+2016-10-12 12:01:40 [scrapy] INFO: Scrapy 1.1.1 started (bot: topgoods)
+2016-10-12 12:01:40 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'topgoods.spiders', 'FEED_URI': 'result.csv', 'SPIDER_MODULES': ['topgoods.spiders'], 'BOT_NAME': 'topgoods', 'FEED_FORMAT': 'csv', 'LOG_FILE': 'scrapy.log'}
+2016-10-12 12:01:40 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-10-12 12:01:40 [py.warnings] WARNING: /home/tomcat/myenv27/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2016-10-12 12:01:40 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-10-12 12:01:40 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-10-12 12:01:40 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-10-12 12:01:40 [scrapy] INFO: Spider opened
+2016-10-12 12:01:40 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-10-12 12:01:40 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6024
+2016-10-12 12:01:40 [scrapy] DEBUG: Redirecting (302) to <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest>
+2016-10-12 12:01:40 [scrapy] DEBUG: Redirecting (302) to <GET https://pass.tmall.com/add?_tb_token_=lcfNdwQQEERd&cookie2=4852b200b11cc0757014720074ff26c4&t=70e682a5d4c9be41a24acfef25ebbd51&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&pacc=wDbFi7ILP1teQG_Ne9pZYg==&opi=183.12.51.161&tmsc=1476244900785676> from <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest>
+2016-10-12 12:01:41 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest> from <GET https://pass.tmall.com/add?_tb_token_=lcfNdwQQEERd&cookie2=4852b200b11cc0757014720074ff26c4&t=70e682a5d4c9be41a24acfef25ebbd51&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&pacc=wDbFi7ILP1teQG_Ne9pZYg==&opi=183.12.51.161&tmsc=1476244900785676>
+2016-10-12 12:01:41 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest>
+2016-10-12 12:01:41 [scrapy] DEBUG: Redirecting (302) to <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsZGNiMjllNjYzMDgyNGVkM2FiNjdiNWNjYjVjN2JhMDk%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&smSign=wwffpIwp4SdIC4VApoxNoQ%3D%3D> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest>
+2016-10-12 12:01:41 [scrapy] DEBUG: Redirecting (302) to <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsZGNiMjllNjYzMDgyNGVkM2FiNjdiNWNjYjVjN2JhMDk%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DwwffpIwp4SdIC4VApoxNoQ%253D%253D> from <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsZGNiMjllNjYzMDgyNGVkM2FiNjdiNWNjYjVjN2JhMDk%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&smSign=wwffpIwp4SdIC4VApoxNoQ%3D%3D>
+2016-10-12 12:01:41 [scrapy] DEBUG: Redirecting (302) to <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsZGNiMjllNjYzMDgyNGVkM2FiNjdiNWNjYjVjN2JhMDk%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DwwffpIwp4SdIC4VApoxNoQ%253D%253D> from <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsZGNiMjllNjYzMDgyNGVkM2FiNjdiNWNjYjVjN2JhMDk%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DwwffpIwp4SdIC4VApoxNoQ%253D%253D>
+2016-10-12 12:01:41 [scrapy] DEBUG: Crawled (200) <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsZGNiMjllNjYzMDgyNGVkM2FiNjdiNWNjYjVjN2JhMDk%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DwwffpIwp4SdIC4VApoxNoQ%253D%253D> (referer: None)
+2016-10-12 12:01:41 [tm_goods] DEBUG: List Page error--https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsZGNiMjllNjYzMDgyNGVkM2FiNjdiNWNjYjVjN2JhMDk%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DwwffpIwp4SdIC4VApoxNoQ%253D%253D
+2016-10-12 12:01:41 [scrapy] INFO: Closing spider (finished)
+2016-10-12 12:01:41 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4735,
+ 'downloader/request_count': 8,
+ 'downloader/request_method_count/GET': 8,
+ 'downloader/response_bytes': 11663,
+ 'downloader/response_count': 8,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 10, 12, 4, 1, 41, 839458),
+ 'log_count/DEBUG': 10,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 8,
+ 'scheduler/dequeued/memory': 8,
+ 'scheduler/enqueued': 8,
+ 'scheduler/enqueued/memory': 8,
+ 'start_time': datetime.datetime(2016, 10, 12, 4, 1, 40, 423003)}
+2016-10-12 12:01:41 [scrapy] INFO: Spider closed (finished)
+2016-10-12 12:02:51 [scrapy] INFO: Scrapy 1.1.1 started (bot: topgoods)
+2016-10-12 12:02:51 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'topgoods.spiders', 'FEED_URI': 'result.csv', 'SPIDER_MODULES': ['topgoods.spiders'], 'BOT_NAME': 'topgoods', 'FEED_FORMAT': 'csv', 'LOG_FILE': 'scrapy.log'}
+2016-10-12 12:02:51 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-10-12 12:02:51 [py.warnings] WARNING: /home/tomcat/myenv27/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2016-10-12 12:02:51 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-10-12 12:02:51 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-10-12 12:02:51 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-10-12 12:02:51 [scrapy] INFO: Spider opened
+2016-10-12 12:02:51 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-10-12 12:02:51 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6024
+2016-10-12 12:02:51 [scrapy] DEBUG: Redirecting (302) to <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest>
+2016-10-12 12:02:51 [scrapy] DEBUG: Redirecting (302) to <GET https://pass.tmall.com/add?_tb_token_=bT5lyLRrFHyG&cookie2=f0ae2ec4bc853f4fc08a887a10e5c5b0&t=70ec6fd57bd831e5155f69665fec44c1&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&pacc=lqALkz92kr2Z7ja4e-EXFA==&opi=183.12.51.161&tmsc=1476244971818466> from <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest>
+2016-10-12 12:02:52 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest> from <GET https://pass.tmall.com/add?_tb_token_=bT5lyLRrFHyG&cookie2=f0ae2ec4bc853f4fc08a887a10e5c5b0&t=70ec6fd57bd831e5155f69665fec44c1&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&pacc=lqALkz92kr2Z7ja4e-EXFA==&opi=183.12.51.161&tmsc=1476244971818466>
+2016-10-12 12:02:52 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest>
+2016-10-12 12:02:52 [scrapy] DEBUG: Redirecting (302) to <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsMDhhNTQ2M2NjMTllNDVlYThkNTRkZDA2ZTc1NjgzZmU%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&smSign=B8EBvQ7ZU5GtBUO8A3hMEA%3D%3D> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest>
+2016-10-12 12:02:52 [scrapy] DEBUG: Redirecting (302) to <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMDhhNTQ2M2NjMTllNDVlYThkNTRkZDA2ZTc1NjgzZmU%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DB8EBvQ7ZU5GtBUO8A3hMEA%253D%253D> from <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsMDhhNTQ2M2NjMTllNDVlYThkNTRkZDA2ZTc1NjgzZmU%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&smSign=B8EBvQ7ZU5GtBUO8A3hMEA%3D%3D>
+2016-10-12 12:02:52 [scrapy] DEBUG: Redirecting (302) to <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMDhhNTQ2M2NjMTllNDVlYThkNTRkZDA2ZTc1NjgzZmU%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DB8EBvQ7ZU5GtBUO8A3hMEA%253D%253D> from <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMDhhNTQ2M2NjMTllNDVlYThkNTRkZDA2ZTc1NjgzZmU%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DB8EBvQ7ZU5GtBUO8A3hMEA%253D%253D>
+2016-10-12 12:02:52 [scrapy] DEBUG: Crawled (200) <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMDhhNTQ2M2NjMTllNDVlYThkNTRkZDA2ZTc1NjgzZmU%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DB8EBvQ7ZU5GtBUO8A3hMEA%253D%253D> (referer: None)
+2016-10-12 12:02:52 [tm_goods] DEBUG: List Page error--https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMDhhNTQ2M2NjMTllNDVlYThkNTRkZDA2ZTc1NjgzZmU%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DB8EBvQ7ZU5GtBUO8A3hMEA%253D%253D
+2016-10-12 12:02:52 [scrapy] INFO: Closing spider (finished)
+2016-10-12 12:02:52 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4735,
+ 'downloader/request_count': 8,
+ 'downloader/request_method_count/GET': 8,
+ 'downloader/response_bytes': 11672,
+ 'downloader/response_count': 8,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 10, 12, 4, 2, 52, 669677),
+ 'log_count/DEBUG': 10,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 8,
+ 'scheduler/dequeued/memory': 8,
+ 'scheduler/enqueued': 8,
+ 'scheduler/enqueued/memory': 8,
+ 'start_time': datetime.datetime(2016, 10, 12, 4, 2, 51, 474824)}
+2016-10-12 12:02:52 [scrapy] INFO: Spider closed (finished)
+2016-10-12 12:03:01 [scrapy] INFO: Scrapy 1.1.1 started (bot: topgoods)
+2016-10-12 12:03:01 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'topgoods.spiders', 'FEED_URI': 'result.csv', 'SPIDER_MODULES': ['topgoods.spiders'], 'BOT_NAME': 'topgoods', 'FEED_FORMAT': 'csv', 'LOG_FILE': 'scrapy.log'}
+2016-10-12 12:03:01 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-10-12 12:03:01 [py.warnings] WARNING: /home/tomcat/myenv27/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2016-10-12 12:03:01 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-10-12 12:03:01 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-10-12 12:03:01 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-10-12 12:03:01 [scrapy] INFO: Spider opened
+2016-10-12 12:03:01 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-10-12 12:03:01 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6024
+2016-10-12 12:03:01 [scrapy] DEBUG: Redirecting (302) to <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest>
+2016-10-12 12:03:01 [scrapy] DEBUG: Redirecting (302) to <GET https://pass.tmall.com/add?_tb_token_=OBAxlsb21yM2&cookie2=2fdf3b3d3780921ad6fee692168e6e7c&t=1b4a38da4f5b5b04dcd792f662f887d0&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&pacc=LVoGywR2hFx1yp8M3B39RQ==&opi=183.12.51.161&tmsc=1476244981490715> from <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest>
+2016-10-12 12:03:01 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest> from <GET https://pass.tmall.com/add?_tb_token_=OBAxlsb21yM2&cookie2=2fdf3b3d3780921ad6fee692168e6e7c&t=1b4a38da4f5b5b04dcd792f662f887d0&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&pacc=LVoGywR2hFx1yp8M3B39RQ==&opi=183.12.51.161&tmsc=1476244981490715>
+2016-10-12 12:03:01 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest>
+2016-10-12 12:03:01 [scrapy] DEBUG: Redirecting (302) to <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsMzVkYTQxNGQ5ZDNkNGU2MTlmZWMwMDgyYmFiMTZjZmE%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&smSign=tqclVDGz1ASmUr%2F3Y%2F%2Fr0Q%3D%3D> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest>
+2016-10-12 12:03:02 [scrapy] DEBUG: Redirecting (302) to <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMzVkYTQxNGQ5ZDNkNGU2MTlmZWMwMDgyYmFiMTZjZmE%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DtqclVDGz1ASmUr%252F3Y%252F%252Fr0Q%253D%253D> from <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsMzVkYTQxNGQ5ZDNkNGU2MTlmZWMwMDgyYmFiMTZjZmE%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&smSign=tqclVDGz1ASmUr%2F3Y%2F%2Fr0Q%3D%3D>
+2016-10-12 12:03:02 [scrapy] DEBUG: Redirecting (302) to <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMzVkYTQxNGQ5ZDNkNGU2MTlmZWMwMDgyYmFiMTZjZmE%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DtqclVDGz1ASmUr%252F3Y%252F%252Fr0Q%253D%253D> from <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMzVkYTQxNGQ5ZDNkNGU2MTlmZWMwMDgyYmFiMTZjZmE%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DtqclVDGz1ASmUr%252F3Y%252F%252Fr0Q%253D%253D>
+2016-10-12 12:03:02 [scrapy] DEBUG: Crawled (200) <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMzVkYTQxNGQ5ZDNkNGU2MTlmZWMwMDgyYmFiMTZjZmE%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DtqclVDGz1ASmUr%252F3Y%252F%252Fr0Q%253D%253D> (referer: None)
+2016-10-12 12:03:02 [tm_goods] DEBUG: List Page error--https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsMzVkYTQxNGQ5ZDNkNGU2MTlmZWMwMDgyYmFiMTZjZmE%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DtqclVDGz1ASmUr%252F3Y%252F%252Fr0Q%253D%253D
+2016-10-12 12:03:02 [scrapy] INFO: Closing spider (finished)
+2016-10-12 12:03:02 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4765,
+ 'downloader/request_count': 8,
+ 'downloader/request_method_count/GET': 8,
+ 'downloader/response_bytes': 11680,
+ 'downloader/response_count': 8,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 10, 12, 4, 3, 2, 453407),
+ 'log_count/DEBUG': 10,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 8,
+ 'scheduler/dequeued/memory': 8,
+ 'scheduler/enqueued': 8,
+ 'scheduler/enqueued/memory': 8,
+ 'start_time': datetime.datetime(2016, 10, 12, 4, 3, 1, 216726)}
+2016-10-12 12:03:02 [scrapy] INFO: Spider closed (finished)
+2016-10-12 16:19:36 [scrapy] INFO: Scrapy 1.1.1 started (bot: topgoods)
+2016-10-12 16:19:36 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'topgoods.spiders', 'SPIDER_MODULES': ['topgoods.spiders'], 'LOG_FILE': 'scrapy.log', 'BOT_NAME': 'topgoods'}
+2016-10-12 16:19:36 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-10-12 16:19:36 [py.warnings] WARNING: /home/tomcat/myenv27/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2016-10-12 16:19:36 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-10-12 16:19:36 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-10-12 16:19:36 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-10-12 16:19:36 [scrapy] INFO: Spider opened
+2016-10-12 16:19:36 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-10-12 16:19:36 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-10-12 16:19:37 [scrapy] DEBUG: Redirecting (302) to <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest>
+2016-10-12 16:19:37 [scrapy] DEBUG: Redirecting (302) to <GET https://pass.tmall.com/add?_tb_token_=cTKJGdW5wCwB&cookie2=30ccb42239e09c8c4489ee7884b4b116&t=d9f45d56ae497a43c98a92283816e7ef&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&pacc=co68FTuwan4mcq4EyMxBaw==&opi=183.12.51.161&tmsc=1476260377172719> from <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest>
+2016-10-12 16:19:37 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest> from <GET https://pass.tmall.com/add?_tb_token_=cTKJGdW5wCwB&cookie2=30ccb42239e09c8c4489ee7884b4b116&t=d9f45d56ae497a43c98a92283816e7ef&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26q%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&pacc=co68FTuwan4mcq4EyMxBaw==&opi=183.12.51.161&tmsc=1476260377172719>
+2016-10-12 16:19:37 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest> from <GET https://list.tmall.com/search_product.htm?tbpm=1&q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest>
+2016-10-12 16:19:37 [scrapy] DEBUG: Redirecting (302) to <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsN2E5ZmIyZDc2ZGU3NDUzMDk4NjkyYWEwMDA1MzIwN2Q%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&smSign=DgG7ZHTKQkYqnW2luDborQ%3D%3D> from <GET https://list.tmall.com/search_product.htm?q=%C5%AE%D7%B0&type=p&vmarket=&spm=875.7931836%2FA.a2227oh.d100&xl=nv_3&from=mallfp..pc_1_suggest>
+2016-10-12 16:19:37 [scrapy] DEBUG: Redirecting (302) to <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsN2E5ZmIyZDc2ZGU3NDUzMDk4NjkyYWEwMDA1MzIwN2Q%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DDgG7ZHTKQkYqnW2luDborQ%253D%253D> from <GET https://sec.taobao.com/query.htm?smApp=tmallsearch&smPolicy=tmallsearch-product-anti_Spider-html-checklogin&smCharset=GBK&smTag=MTgzLjEyLjUxLjE2MSwsN2E5ZmIyZDc2ZGU3NDUzMDk4NjkyYWEwMDA1MzIwN2Q%3D&smReturn=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Fq%3D%25C5%25AE%25D7%25B0%26type%3Dp%26vmarket%3D%26spm%3D875.7931836%252FA.a2227oh.d100%26xl%3Dnv_3%26from%3Dmallfp..pc_1_suggest&smSign=DgG7ZHTKQkYqnW2luDborQ%3D%3D>
+2016-10-12 16:19:37 [scrapy] DEBUG: Redirecting (302) to <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsN2E5ZmIyZDc2ZGU3NDUzMDk4NjkyYWEwMDA1MzIwN2Q%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DDgG7ZHTKQkYqnW2luDborQ%253D%253D> from <GET http://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsN2E5ZmIyZDc2ZGU3NDUzMDk4NjkyYWEwMDA1MzIwN2Q%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DDgG7ZHTKQkYqnW2luDborQ%253D%253D>
+2016-10-12 16:19:37 [scrapy] DEBUG: Crawled (200) <GET https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsN2E5ZmIyZDc2ZGU3NDUzMDk4NjkyYWEwMDA1MzIwN2Q%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DDgG7ZHTKQkYqnW2luDborQ%253D%253D> (referer: None)
+2016-10-12 16:19:38 [tm_goods] DEBUG: List Page error--https://login.tmall.com/?from=sm&redirect_url=https%3A%2F%2Fsec.taobao.com%2Fquery.htm%3Faction%3DQueryAction%26event_submit_do_login%3Dok%26smApp%3Dtmallsearch%26smPolicy%3Dtmallsearch-product-anti_Spider-html-checklogin%26smCharset%3DGBK%26smTag%3DMTgzLjEyLjUxLjE2MSwsN2E5ZmIyZDc2ZGU3NDUzMDk4NjkyYWEwMDA1MzIwN2Q%253D%26smReturn%3Dhttps%253A%252F%252Flist.tmall.com%252Fsearch_product.htm%253Fq%253D%2525C5%2525AE%2525D7%2525B0%2526type%253Dp%2526vmarket%253D%2526spm%253D875.7931836%25252FA.a2227oh.d100%2526xl%253Dnv_3%2526from%253Dmallfp..pc_1_suggest%26smSign%3DDgG7ZHTKQkYqnW2luDborQ%253D%253D
+2016-10-12 16:19:38 [scrapy] INFO: Closing spider (finished)
+2016-10-12 16:19:38 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4735,
+ 'downloader/request_count': 8,
+ 'downloader/request_method_count/GET': 8,
+ 'downloader/response_bytes': 11628,
+ 'downloader/response_count': 8,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 10, 12, 8, 19, 38, 92304),
+ 'log_count/DEBUG': 10,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 8,
+ 'scheduler/dequeued/memory': 8,
+ 'scheduler/enqueued': 8,
+ 'scheduler/enqueued/memory': 8,
+ 'start_time': datetime.datetime(2016, 10, 12, 8, 19, 36, 749058)}
+2016-10-12 16:19:38 [scrapy] INFO: Spider closed (finished)
