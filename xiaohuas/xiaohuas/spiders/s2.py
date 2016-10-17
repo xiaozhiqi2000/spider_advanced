@@ -56,7 +56,7 @@ class XiaoHuarSpider(scrapy.spiders.Spider):
                 # file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),file_name)
                 # print os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
                 file_path = os.path.join('/home/tomcat/workplace/spider_advanced/spider1/image/',file_name)
-                urllib.urlretrieve(ab_src,file_path)
+                urllib.urlretrieve(ab_src,file_path)  # 下载图片
 
 
 

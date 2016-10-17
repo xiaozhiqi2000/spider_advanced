@@ -11,7 +11,12 @@ vi myfirstscrapy/spider/dmoz_spider
 
 # 运行爬虫
 scrapy crawl dmoz_spider --nolog
-
+    --nolog      # 不输出日志
+    --loglevel=  # 指定日志的级别
+    --logfile=   # 将日志保存到文件
+    --output=    # 将获取的数据输出到文件
+    --output-format=
+    -s JOBDIR=crawl/somespider-1
 # 列出有多少爬虫
 scrapy list
 
